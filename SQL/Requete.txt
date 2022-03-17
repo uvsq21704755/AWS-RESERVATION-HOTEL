@@ -1,0 +1,11 @@
+# Requetes
+
+- Info Personnel: Recupere les informations lié a un client
+- Point de fidelité: Recuperer les points de fidelité du client
+- Historique de réservation: Recuperation de l'historique des réservations (ensemble des occurence pour un ID_client de la table Réservation)
+- Login: Verification si l'adresse-mail d'un client correspond au bon mpd du meme client
+- S'enregistrer: Creation d'un clients avec nom Prenom mail mpd
+- Actualisation des données: Update d'un client nom prenom mail mpd adresse
+- Recherche: Pour chaque hotel le renvoyé si il est dans la ville saisie et qu'il a au moins n chambres disponible durant les dates saisies.
+- Recherche Voir disponibilité: Pour un hotel spécifique, recuperer l'ensemble des chambres disponibles durant les dates saisies
+- Confirmation: Update chambre plus disponible donc ajout d'une instance de la table, historique des reservations du clients 
