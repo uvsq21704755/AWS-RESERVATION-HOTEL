@@ -97,6 +97,34 @@ CREATE TABLE Concerner(
 );
 
 
+CREATE TABLE Commentaire(
+	ID_Com int(10) NOT NULL,
+	contenu varchar(150) NOT NULL,
+	id_hotel int(10) NOT NULL,
+	PRIMARY KEY (ID_Com),
+	FOREIGN KEY (id_hotel) REFERENCES Hotel (ID_HOTEL) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+INSERT INTO Commentaire values
+  (1,"tres bon accueil",1),
+  (2,"Parfait",1),
+  (3,"hotel propre et les chambres sont très belles",1),
+  (4,"Les chambres sont bien",1),
+  (5,"Je ne suis pas satisfait",2),
+  (6,"Chambre propre, cependant vitres sales, porte de salle de bain avec de nombreuses traces",2),
+  (7,"hotel propre",3),
+  (8,"Personnel très acceuillant",3),
+  (9,"super hotel",3),
+  (10,"Les chambres sont spacieuses",4),
+  (11,"accueil chaleureux",4),
+  (12,"Chambre pas propre",4),
+  (13,"Hôtel simple à un prix raisonnable",5),
+  (14,"Personel accueil sympathique",5),
+  (15,"Hotel difficile à acceder pour les nouveaux venus",6),
+  (16,"Les escaliers ne sont pas propre. Les murs en carton",6);
+
+
+
 
 INSERT INTO Client values
   (1,"Prescott","James","02 95 64 08 36","morbi.quis@hotmail.couk","United States","ipsum",162),
