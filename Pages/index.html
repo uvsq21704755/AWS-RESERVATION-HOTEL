@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
     <link rel="stylesheet" type="text/css"  href="css/slick.css">
     <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome-free-6.1.1-web/css/all.css">
 
     <!-- Custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/initial.css">
@@ -49,6 +50,12 @@
     <script  src="js/html5shiv.min.js"></script>
     <script  src="js/respond.min.js"></script>
     <![endif]-->
+
+    
+    
+
+      
+      
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -84,7 +91,7 @@
 <header class="main-header" id="main-header-2">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand-logos" href="#">
+            <a class="navbar-brand-logos" href="index.html">
                 <img src="img/logos/logo.png" alt="logo" class="logo-photo" height="100">
                <!-- <img src="img/logos/white-logo.png" alt="logo" class="logo-photo2" height="100"> -->
             </a>
@@ -132,7 +139,7 @@
                 <form class="form-inline">
                     <input type="text" class="form-control" id="searchKey" placeholder="Search...">
                     <div class="search-btns">
-                        <button type="submit" class="btn btn-default">Search</button>
+                        <button type="submit" class="btn btn-default" href="rooms-col-1.html" >Search</button>
                     </div>
                 </form>
             </div>
@@ -157,10 +164,10 @@
             <h3 class="heading">Menu</h3>
             <ul class="menu-list">
                 <li>
-                    <a href="#"><i class="fa fa-home"></i>   Home</a>
+                    <a href="index.html"><i class="fa fa-home"></i>   Home</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa flaticon-bed"></i>   Stays</a>
+                    <a href="rooms-col-1.html"><i class="fa flaticon-bed"></i>  Stays</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-building-o"></i>   Our company</a>
@@ -168,17 +175,17 @@
                 <li><a href="#"><i class="fa fa-info"></i>   Help<em class="fa fa-chevron-down"></em></a>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
                     </ul>
                 </li>
 
 
                 <li class="nav-item">
-                    <a href="#" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                    <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                    <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -199,7 +206,7 @@
                         <div class="row bti-section">
                             <div class="col-lg-7 col-md-12 align-self-center">
                                 <div class="banner-test-info wow fadeInLeft delay-04s">
-                                    <h1 class="display1"> Hotel Resort</h1>
+                                    <h1 class="display1"> Hotel Resort </h1>
                                     <p>The perfect hotel at the best price.</p>
                                     <a class="btn-lg btn-4 btn-6" href="#">BOOK NOW   <em class="fa fa-arrow-right"></em></a>
                                 </div>
@@ -209,8 +216,22 @@
                                     <div class="search-contents">
                                         <form method="GET">
                                             <h4>And you, <span>where will you choose to go?</span></h4>
+                                            <!--
                                             <div class="form-group">
                                                 <input type="text" class="btn-default" placeholder="Destination">
+                                            </div>
+                                             -->
+                                            <div class="form-group">
+                                                <select class="selectpicker search-fields" name="destination">
+                                                    <option>Destination</option>
+                                                    <option>France</option>
+                                                    <option>UK</option>
+                                                    <option>Spain</option>
+                                                    <option>US</option>
+                                                    <option>Germany</option>
+                                                    <option>Italia</option>
+                                                    <option>Portugal</option>
+                                                </select>
                                             </div>
                                             <div class="form-group">
                                                 <input type="text" class="btn-default datepicker" placeholder="Check-in">
@@ -254,7 +275,7 @@
                                             </div>
                                             <p></p>
                                             <div class="form-group mb-0">
-                                                <button class="w-100 btn-theme btn-4 btn-7">Search</button>
+                                                <a class="w-100 btn-theme btn-4 btn-7" href="rooms-col-1.html">Search</a>
                                             </div>
                                         </form>
                                     </div>
@@ -297,8 +318,22 @@
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
+                                    <select class="selectpicker search-fields" name="destination">
+                                        <option>Destination</option>
+                                        <option>France</option>
+                                        <option>UK</option>
+                                        <option>Spain</option>
+                                        <option>US</option>
+                                        <option>Germany</option>
+                                        <option>Italia</option>
+                                        <option>Portugal</option>
+                                    </select>
+                                </div>
+                                <!--
+                                <div class="form-group">
                                     <input type="text" class="btn-default" placeholder="Destination">
                                 </div>
+                                -->
                             </div>
                             <div class="center">
                                 <at>Number of people</at>
@@ -360,12 +395,11 @@
                         <div class="image-2"><img src="img/about/hotel2.png" class="rounded" alt="photo"></div>
                     </div>
                     <div class="about-box-Experience">
-                       <msg class="mb-0 text-white">Best hotel booking website of the year
-                        <p></p>
                         <gold>
-                        <em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em>
+                            <em class="fa-solid fa-crown fa-2xl"></em>
                         </gold>
-                    </msg>
+                        <p></p>
+                       <p class="mb-0 text-white">Best hotel booking website of the year</p>
                     </div>
                 </div>
             </div>
@@ -374,19 +408,24 @@
                     <h1>Why book on Hotel Resort ?</h1>
                     <ul class="network-list mb-40">
                         <li>
-                            <i class="icon fa fa-exchange"></i>
-                            <h4>Free cancellation</h4>
-                            <p></p>
+                            <i class="icon fa-regular fa-circle-check"></i>
+                            <h4>Instant confirmation</h4>
+                            <p>At HotelResort.com, every reservation is instantly confirmed. Once you've found your perfect stay, a few clicks are all it takes.</p>
                         </li>
                         <li>
-                            <i class="icon flaticon-money"></i>
-                            <h4>Clear pricing</h4>
-                            <p></p>
+                            <i class="icon fa-regular fa-credit-card"></i>
+                            <h4>No reservation fees</h4>
+                            <p>We don't charge you any booking fees or add any administrative charges. And in many cases, your booking can be cancelled free of charge.</p>
                         </li>
                         <li>
-                            <i class="icon flaticon-headphone"></i>
-                            <h4>Good support</h4>
-                            <p></p>
+                            <i class="icon fa-solid fa-lock"></i>
+                            <h4>Secure booking</h4>
+                            <p>We facilitate hundreds of thousands of transactions every day through our secure platform, and work to the highest standards to guarantee your privacy.</p>
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-headset"></i>
+                            <h4>24/7 support</h4>
+                            <p>Whether you've just booked or are already enjoying your trip, our customer experience team are on hand around the clock to answer your questions. Make sure to check out our FAQ for travellers. </p>
                         </li>
                     </ul>
                     <a class="btn-lg btn-5" href="#"><span>Explore More</span></a>
@@ -405,8 +444,8 @@
         <div class="container">
             <!-- Main title -->
             <div class="main-title">
-                <h1>Our Best Hotels</h1>
-                <p>The most booked hotels</p>
+                <h1>Hotels you might like</h1>
+                <!-- <p>The most booked hotels</p> -->
             </div>
             <div class="row wow fadeInUp delay-04s">
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -874,17 +913,34 @@
     <div class="copy-right">
         <div class="container">
             <div class="row">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link px-2 text-muted">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="nav-link px-2 text-muted">My Account</a>
+                    </li>
+                </ul>
                 <div class="col-lg-6 col-md-6">
                     <p> &copy;  2022 All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="clearfix"></div>
                     <ul class="social-list">
-                        <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="twitter-bg"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" class="instagram-bg"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="facebook-bg"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#" class="google-bg"><i class="fa-brands fa-google-plus"></i></a></li>
+                        <li><a href="#" class="linkedin-bg"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
