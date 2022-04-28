@@ -496,6 +496,13 @@ $(function () {
     $(window).resize(function () {
         resizeModalsContent();
     });
+
+
+
+
+
+
+
 });
 
 // mCustomScrollbar initialization
@@ -632,3 +639,21 @@ $(".input-number").keydown(function (e) {
             e.preventDefault();
         }
     });
+
+
+    function sendEmail() {
+        var toEmail = $.trim($("[id*=txtTo]").val());
+        console.log(toEmail)
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username : "uvsqconf@gmail.com",
+            Password : "yc%sodjfehv0",
+            To : toEmail,
+            From : "uvsqconf@gmail.com",
+            Subject : "Hotel Resort - Passowrd Reset",
+            Body : "You requested a password reset.",
+            }).then(
+                message => alert("mail sent successfully")
+            );
+        
+    }
