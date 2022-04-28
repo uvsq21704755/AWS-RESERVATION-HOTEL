@@ -206,9 +206,9 @@ Top header end
 
 
 
-<!-- Sidenav start -->
+<!-- Sidenav start 
 <nav id="sidebar" class="nav-sidebar sidebar-heading-section">
-    <!-- Close btn-->
+    Close btn
     <div id="dismiss">
         <i class="fa fa-close"></i>
     </div>
@@ -341,7 +341,54 @@ Top header end
         </div>
     </div>
 </nav>
+Sidenav end -->
+
+
+
+<!-- Sidenav start -->
+<nav id="sidebar" class="nav-sidebar sidebar-heading-section">
+    <!-- Close btn-->
+    <div id="dismiss">
+        <i class="fa fa-close"></i>
+    </div>
+    <div class="sidebar-inner">
+        <div class="sidebar-logo">
+            <img src="img/logos/logo.png" alt="sidebarlogo" height="100" width="100">
+        </div>
+        <div class="sidebar-navigation">
+            <h3 class="heading">Menu</h3>
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html"><i class="fa fa-home"></i>   Home</a>
+                </li>
+                <li>
+                    <a href="rooms-col-1.html"><i class="fa flaticon-bed"></i>  Stays</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-building-o"></i>   Our company</a>
+                </li>
+                <li><a href="#"><i class="fa fa-info"></i>   Help<em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <!-- Sidenav end -->
+
+
 
 <!-- Sub banner start -->
 <div class="sub-banner">
@@ -404,6 +451,19 @@ Top header end
                                         <div class="search-area-box-3 sidebar-widget mb-30">
                                             <div class="search-contents">
                                                 <div class="search-your-details">
+                                                    <select class="selectpicker search-fields" name="destination">
+                                                        <option>Destination</option>
+                                                        <option>Paris</option>
+                                                        <option>Bordeaux</option>
+                                                        <option>Marseille</option>
+                                                        <option>Toulouse</option>
+                                                        <option>Lyon</option>
+                                                        <option>Lille</option>
+                                                        <option>Rennes</option>
+                                                        <option>Rouen</option>
+                                                        <option>Strasbourg</option>
+                                                    </select>
+                                                    <p></p>
                                                     <div class="form-group clearfix">
                                                         <input type="text" class="btn-default datepicker clearfix" placeholder="Check In">
                                                     </div>
@@ -419,28 +479,9 @@ Top header end
                                                             <option>Novotel</option>
                                                         </select>
                                                     </div>
-
                                                     <div class="form-group">
-                                                        <select class="selectpicker search-fields" name="room">
-                                                            <option>Room</option>
-                                                            <option>Single Room</option>
-                                                            <option>Double Room</option>
-                                                            <option>Deluxe Room</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <select class="selectpicker search-fields" name="adults">
-                                                            <option>Adult</option>
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <select class="selectpicker search-fields" name="children">
-                                                            <option>Child</option>
+                                                        <select class="selectpicker search-fields" name="people">
+                                                            <option>Number of people</option>
                                                             <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
