@@ -236,39 +236,25 @@
                                             <div class="form-group clearfix">
                                                 <input type="text" class="btn-default datepicker" placeholder="Check-out">
                                             </div>
-
-                                            <div class="center">
-                                               <at>Number of people</at>
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-placeholder="Nb">
-                                                            <span class="fa fa-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" name="quant[1]" class="form-control input-number" value="0" min="1" max="10">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                                            <span class="fa fa-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
+                                            <div class="form-group">
+                                                <select class="selectpicker search-fields" name="adults">
+                                                    <option>Number of people</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
                                             </div>
-
-                                            <div class="center1">
-                                               <at>Number of rooms</at>
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                                            <span class="fa fa-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" name="quant[1]" class="form-control input-number" value="0" min="1" max="10">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                                            <span class="fa fa-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
+                                            <div class="form-group">
+                                                <select class="selectpicker search-fields" name="rooms">
+                                                    <option>Number of rooms</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
                                             </div>
                                             <p></p>
                                             <div class="form-group mb-0">
@@ -303,17 +289,7 @@
                     </div>
                     <div class="col-lg-9 col-md-12">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 col-12 col-pad-0">
-                                <div class="form-group">
-                                    <input type="text" class="btn-default datepicker" placeholder="Check In">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12 col-pad-0">
-                                <div class="form-group">
-                                    <input type="text" class="btn-default datepicker" placeholder="Check Out">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12 col-pad-0">
+                            <div class="col-md-12 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
                                     <select class="selectpicker search-fields" name="destination">
                                         <option>Destination</option>
@@ -329,38 +305,40 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="center">
-                                <at>Number of people</at>
-                                 <div class="input-group">
-                                     <span class="input-group-btn">
-                                         <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-placeholder="Nb">
-                                             <span class="fa fa-minus"></span>
-                                         </button>
-                                     </span>
-                                     <input type="text" name="quant[1]" class="form-control input-number" value="0" min="1" max="10">
-                                     <span class="input-group-btn">
-                                         <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                             <span class="fa fa-plus"></span>
-                                         </button>
-                                     </span>
-                                 </div>
-                             </div>
-                             <div class="center1">
-                                <at>Number of rooms</at>
-                                 <div class="input-group">
-                                     <span class="input-group-btn">
-                                         <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                             <span class="fa fa-minus"></span>
-                                         </button>
-                                     </span>
-                                     <input type="text" name="quant[1]" class="form-control input-number" value="0" min="1" max="10">
-                                     <span class="input-group-btn">
-                                         <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                             <span class="fa fa-plus"></span>
-                                         </button>
-                                     </span>
-                                 </div>
-                             </div>
+                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                                <div class="form-group">
+                                    <input type="text" class="btn-default datepicker" placeholder="Check In">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                                <div class="form-group">
+                                    <input type="text" class="btn-default datepicker" placeholder="Check Out">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                                <div class="form-group">
+                                    <select class="selectpicker search-fields" name="adults">
+                                        <option>Number of people</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                                <div class="form-group">
+                                    <select class="selectpicker search-fields" name="rooms">
+                                        <option>Number of rooms</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
                              <p></p>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
