@@ -596,78 +596,80 @@ Top header end
                                 <div class="col-lg-8 col-md-12 col-sm-12">
                                     <h3 class="booking-heading-2 black-color">Personal Info</h3>
                                     <div class="contact-form">
-                                        <div class="sidebar-widget">
-                                            <div class="row">
-                                                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="form-group firstname">
-                                                        <label for="inputfirstname" class="form-label">First Name</label>
-                                                        <input type="text" name="first-name" class="form-control" id="inputfirstname" placeholder="First Name">
+                                        <form action="/inscription" method="POST">
+                                            <div class="sidebar-widget">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group firstname">
+                                                            <label for="inputfirstname" class="form-label">First Name</label>
+                                                            <input type="text" name="first-name" class="form-control" id="inputfirstname" placeholder="First Name">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="form-group lastname">
-                                                        <label for="inputlastname" class="form-label">Last Name</label>
-                                                        <input type="text" name="last-name" class="form-control" id="inputlastname" placeholder="Last Name">
+                                                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group lastname">
+                                                            <label for="inputlastname" class="form-label">Last Name</label>
+                                                            <input type="text" name="last-name" class="form-control" id="inputlastname" placeholder="Last Name">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="form-group country">
-                                                        <label>Country</label>
-                                                        <select class="selectpicker country search-fields" name="Country">
-                                                            <option>Country</option>
-                                                            <option>United Kingdom</option>
-                                                            <option>Canada</option>
-                                                            <option>Australia</option>
-                                                            <option>France</option>
-                                                            <option>Spain</option>
-                                                            <option>Brazil</option>
-                                                            <option>Bhutan</option>
-                                                            <option>Bangladesh</option>
-                                                            <option>India</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="sidebar-widget sw-2">
-                                            <h3 class="booking-heading-2">Account Info</h3>
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="form-group phone-number">
-                                                        <label for="inputphonenumber" class="form-label">Phone Number</label>
-                                                        <input type="text" name="name" class="form-control" id="inputphonenumber" placeholder="Phone Number">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="form-group email">
-                                                        <label for="inputemailaddress" class="form-label">Email Address</label>
-                                                        <input type="email" name="email" class="form-control" id="inputemailaddress" placeholder="Email Address">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="form-group password">
-                                                        <label for="inputpassword" class="form-label">Password</label>
-                                                        <input type="password" name="password" class="form-control" id="inputpassword" placeholder="Password">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                    <div class="form-group re-password">
-                                                        <label for="inputre-password" class="form-label">Re-Password</label>
-                                                        <input type="password" name="password" class="form-control" id="inputre-password" placeholder="Re-Password">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="checkbox mb-30 clearfix">
-                                                        <div class="ez-checkbox pull-left">
-                                                            <label>
-                                                                <input type="checkbox" class="ez-hide">
-                                                                By Sign up you are agree with our <a href="#">terms and condition</a>
-                                                            </label>
+                                                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group country">
+                                                            <label>Country</label>
+                                                            <select class="selectpicker country search-fields" name="Country">
+                                                                <option>Country</option>
+                                                                <option>United Kingdom</option>
+                                                                <option>Canada</option>
+                                                                <option>Australia</option>
+                                                                <option>France</option>
+                                                                <option>Spain</option>
+                                                                <option>Brazil</option>
+                                                                <option>Bhutan</option>
+                                                                <option>Bangladesh</option>
+                                                                <option>India</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                            <div class="sidebar-widget sw-2">
+                                                <h3 class="booking-heading-2">Account Info</h3>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group phone-number">
+                                                            <label for="inputphonenumber" class="form-label">Phone Number</label>
+                                                            <input type="text" name="name" class="form-control" id="inputphonenumber" placeholder="Phone Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group email">
+                                                            <label for="inputemailaddress" class="form-label">Email Address</label>
+                                                            <input type="email" name="email" class="form-control" id="inputemailaddress" placeholder="Email Address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group password">
+                                                            <label for="inputpassword" class="form-label">Password</label>
+                                                            <input type="password" name="password" class="form-control" id="inputpassword" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group re-password">
+                                                            <label for="inputre-password" class="form-label">Re-Password</label>
+                                                            <input type="password" name="password" class="form-control" id="inputre-password" placeholder="Re-Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="checkbox mb-30 clearfix">
+                                                            <div class="ez-checkbox pull-left">
+                                                                <label>
+                                                                    <input type="checkbox" class="ez-hide">
+                                                                    By Sign up you are agree with our <a href="#">terms and condition</a>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-12 col-sm-12">
