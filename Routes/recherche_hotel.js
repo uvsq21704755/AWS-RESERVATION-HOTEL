@@ -47,6 +47,13 @@ router.post('/', async (req, res) => {
                     {date_fin:1,_id:0}}).toArray();
                 
                 boolchambre = true;
+                if(date_arriv.length == 0){
+                    id_hotel[i] = await       
+                    client.db("aws").collection("Chambre").find({
+                    ID_CHAMBRE:room[i][j].ID_CHAMBRE},{projection :     
+                        {id_hotel:1,_id:0}}).toArray();
+                    break;
+                }
                 //boucle sur les dates d'une chambre
                 
                 for(var k = 0; k < date_arriv.length; k++)
