@@ -101,7 +101,7 @@ router.post('/', async (req, res) => {
             {
                 nom_hotel[i] = await client.db("aws").collection("Hotel").find({ 
                 ID_HOTEL: id_hotel[i][0].id_hotel},{projection :     
-                    {nom:1,ID_HOTEL:1,ville:1,/*prix:1*/_id:0}}).toArray();
+                    {nom:1,ID_HOTEL:1,ville:1,prix:1,_id:0}}).toArray();
             }
             res.render("hotel",{data: nom_hotel});
         } catch (e) {
