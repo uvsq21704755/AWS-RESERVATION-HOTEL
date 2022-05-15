@@ -93,6 +93,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand-logos" href="index.html">
                 <img src="img/logos/logo.png" alt="logo" class="logo-photo" height="100">
+               <!-- <img src="img/logos/white-logo.png" alt="logo" class="logo-photo2" height="100"> -->
             </a>
             <button class="navbar-toggler" id="drawer" type="button">
                 <span class="fa fa-bars"></span>
@@ -113,23 +114,21 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="faq.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            FAQ
+                        <a class="nav-link " href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
                         </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link " href="contact.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Contact us
-                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                            <a class="dropdown-item" href="contact.html">Contact us</a>
+                        </div>
                     </li>
 
                     <li class="nav-item">
-                        <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                        <a href="connexion" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                        <a href="inscription" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
                     </li>
 
                 </ul>
@@ -140,7 +139,7 @@
                 <form class="form-inline">
                     <input type="text" class="form-control" id="searchKey" placeholder="Search...">
                     <div class="search-btns">
-                        <button type="submit" class="btn btn-default" href="rooms-col-1.html" >Search</button>
+                        <button type="submit" class="btn btn-default" href="hotel" >Search</button>
                     </div>
                 </form>
             </div>
@@ -153,6 +152,7 @@
 
 <!-- Sidenav start -->
 <nav id="sidebar" class="nav-sidebar sidebar-heading-section">
+    <!-- Close btn-->
     <div id="dismiss">
         <i class="fa fa-close"></i>
     </div>
@@ -181,11 +181,11 @@
 
 
                 <li class="nav-item">
-                    <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                    <a href="connexion" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                    <a href="inscription" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -214,8 +214,13 @@
                             <div class="col-lg-5 col-md-12 wow fadeInRight delay-04s">
                                 <div class="search-area-box-2">
                                     <div class="search-contents">
-                                        <form method="GET">
+                                        <form action="/recherche_hotel" method="POST">
                                             <h4>And you, <span>where will you choose to go?</span></h4>
+                                            <!--
+                                            <div class="form-group">
+                                                <input type="text" class="btn-default" placeholder="Destination">
+                                            </div>
+                                             -->
                                             <div class="form-group">
                                                 <select class="selectpicker search-fields" name="destination">
                                                     <option>Destination</option>
@@ -231,34 +236,16 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="btn-default datepicker" placeholder="Check-in">
+                                                <input type="text" class="btn-default datepicker" name="date_deb" placeholder="Check-in">
                                             </div>
                                             <div class="form-group clearfix">
-                                                <input type="text" class="btn-default datepicker" placeholder="Check-out">
+                                                <input type="text" class="btn-default datepicker" name="date_fin" placeholder="Check-out">
                                             </div>
-                                            <div class="form-group">
-                                                <select class="selectpicker search-fields" name="adults">
-                                                    <option>Number of people</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="selectpicker search-fields" name="rooms">
-                                                    <option>Number of rooms</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
+
+                                         
                                             <p></p>
                                             <div class="form-group mb-0">
-                                                <a class="w-100 btn-theme btn-4 btn-7" href="rooms-col-1.html">Search</a>
+                                                <input type="submit"  value="search">
                                             </div>
                                         </form>
                                     </div>
@@ -289,56 +276,67 @@
                     </div>
                     <div class="col-lg-9 col-md-12">
                         <div class="row">
-                            <div class="col-md-12 col-sm-6 col-12 col-pad-0">
-                                <div class="form-group">
-                                    <select class="selectpicker search-fields" name="destination">
-                                        <option>Destination</option>
-                                        <option>Paris</option>
-                                        <option>Bordeaux</option>
-                                        <option>Marseille</option>
-                                        <option>Toulouse</option>
-                                        <option>Lyon</option>
-                                        <option>Lille</option>
-                                        <option>Rennes</option>
-                                        <option>Rouen</option>
-                                        <option>Strasbourg</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                            <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
                                     <input type="text" class="btn-default datepicker" placeholder="Check In">
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                            <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
                                     <input type="text" class="btn-default datepicker" placeholder="Check Out">
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                            <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
-                                    <select class="selectpicker search-fields" name="adults">
-                                        <option>Number of people</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select class="selectpicker search-fields" name="destination">
+                                        <option>Destination</option>
+                                        <option>France</option>
+                                        <option>UK</option>
+                                        <option>Spain</option>
+                                        <option>US</option>
+                                        <option>Germany</option>
+                                        <option>Italia</option>
+                                        <option>Portugal</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-12 col-pad-0">
+                                <!--
                                 <div class="form-group">
-                                    <select class="selectpicker search-fields" name="rooms">
-                                        <option>Number of rooms</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
+                                    <input type="text" class="btn-default" placeholder="Destination">
                                 </div>
+                                -->
                             </div>
+                            <div class="center">
+                                <at>Number of people</at>
+                                 <div class="input-group">
+                                     <span class="input-group-btn">
+                                         <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-placeholder="Nb">
+                                             <span class="fa fa-minus"></span>
+                                         </button>
+                                     </span>
+                                     <input type="text" name="quant[1]" class="form-control input-number" value="0" min="1" max="10">
+                                     <span class="input-group-btn">
+                                         <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                             <span class="fa fa-plus"></span>
+                                         </button>
+                                     </span>
+                                 </div>
+                             </div>
+                             <div class="center1">
+                                <at>Number of rooms</at>
+                                 <div class="input-group">
+                                     <span class="input-group-btn">
+                                         <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                             <span class="fa fa-minus"></span>
+                                         </button>
+                                     </span>
+                                     <input type="text" name="quant[1]" class="form-control input-number" value="0" min="1" max="10">
+                                     <span class="input-group-btn">
+                                         <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                             <span class="fa fa-plus"></span>
+                                         </button>
+                                     </span>
+                                 </div>
+                             </div>
                              <p></p>
                             <div class="col-md-4 col-sm-6 col-12 col-pad-0">
                                 <div class="form-group">
@@ -801,26 +799,27 @@
             <div class="left align-self-center wow fadeInLeft delay-04s">
                 <!-- Main title -->
                 <div class="main-title main-title-4">
-                    <h1>They trust us</h1>
+                    <h1>Hotel Statistics</h1>
+                    <p></p>
                 </div>
             </div>
-            <div class="align-self-center wow fadeInLeft delay-04s">
+            <div class="right float-end wow fadeInRight delay-04s">
                 <div class="counter-inner">
                     <div class="counter-box blue ml-0">
-                        <h1 class="counter">+135</h1>
-                        <h5>Hotels Available</h5>
+                        <h1 class="counter">+100000</h1>
+                        <h5>Guest Stay</h5>
                     </div>
                     <div class="counter-box">
-                        <h1 class="counter">+810</h1>
-                        <h5>Rooms Available</h5>
+                        <h1 class="counter">+2000</h1>
+                        <h5>Book Room</h5>
                     </div>
                     <div class="counter-box green">
-                        <h1 class="counter">+104</h1>
-                        <h5>Clients Subscribed</h5>
+                        <h1 class="counter">+4500</h1>
+                        <h5>Member Stay</h5>
                     </div>
                     <div class="counter-box cgreen">
-                        <h1 class="counter">+200</h1>
-                        <h5>Rooms Booked</h5>
+                        <h1 class="counter">+500000</h1>
+                        <h5>Meals Served</h5>
                     </div>
                 </div>
             </div>
@@ -836,6 +835,34 @@
         <!-- Footer info-->
         <div class="footer-info">
             <div class="row">
+                <!--
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="footer-item">
+                        <div class="main-title-2">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <ul class="personal-info">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                Address: 45 Av. des États Unis, 78000 Versailles
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                Email:<a href="mailto:contact@website.com">contact@website.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                Phone: <a href="tel:+Xx-XXxXXXx">+Xx-XXxXXXx</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-fax"></i>
+                                Fax: +Xx-XXxXXXx
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            -->
+
                 <div class="col-lg-9 col-md-9 col-sm-9">
                     <div class="footer-item newsletter">
                         <div class="main-title-2">
